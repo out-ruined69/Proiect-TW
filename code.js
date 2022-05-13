@@ -6,5 +6,5 @@ function randomInterval(x, y) {
       setInterval(function(){
         const rnd = randomInterval(1, 4);
         document.getElementById('bt' + rnd).checked = true;
-      }, 5000);
+      }, 6900);
   
