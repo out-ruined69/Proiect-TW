@@ -18,6 +18,12 @@ h2 {
     text-align: center;
 }
 
+h3{
+    color: #8b5a2f;
+    font-family: 'Amita', cursive;
+    font-size: 1.2vw;
+}
+
 .titlu
 {
 position: relative;
@@ -106,7 +112,6 @@ font-family: Tangerine;
     width: 700px;
     overflow: hidden;
     align-items: center;
-    /*background-color: #112621;*/
 }
 
 .poze{
@@ -132,10 +137,10 @@ font-family: Tangerine;
 
 .nav-man{
     width: 700px;
-    margin-top: -40px;
+    margin-top: 380px;
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .man-btn{
