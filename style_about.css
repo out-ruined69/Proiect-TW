@@ -112,15 +112,14 @@ font-family: Tangerine;
 
 .urmr{
     position: absolute;
-    transform: translateY(-20%);
     text-align: center;
-    top: 15%;
+    top: 10%;
     width: 100%;
 }
 
 .ochi{
-    width: 240px;
-    height: 120px;
+    width: 12vw;
+    height: 6vw;
     background: #c2c8c6;
     position: relative;
     overflow: hidden;
