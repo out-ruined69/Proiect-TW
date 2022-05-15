@@ -108,6 +108,12 @@ font-family: Tangerine;
     display: block;
 }
 
+.persoane{
+    justify-content: space-evenly;
+    gap: 10000px;
+    align-items: center;
+}
+
 .caseta{
     width: 500px;
     background-color: #d6bcae;
@@ -167,15 +173,6 @@ font-family: Tangerine;
     padding: 10px;
 }
 
-.persoana{
-    float: right;
-}
-
-.rand{
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-}
 
 @keyframes change{
     0% {border: 10px solid #ff0000;}
