@@ -9,7 +9,7 @@ const oneDay = 1000 * 60 * 60 * 24;
 
 //session middleware
 app.use(sessions({
-    secret: "thisismysecrctekeyfhrgfgrfrty84fwir767",
+    secret: "astaecheiameasupersecreta420",
     saveUninitialized:true,
     cookie: { maxAge: oneDay },
     resave: false
@@ -23,8 +23,8 @@ app.use(express.static(__dirname));
 
 app.use(cookieParser());
 
-const myusername = 'nume'
-const mypassword = 'parola'
+const myusername = 'nume';
+const mypassword = 'parola';
 
 
 var session;
@@ -32,7 +32,7 @@ var session;
 app.get('/',(req,res) => {
     session=req.session;
     if(session.userid){
-        res.send("Welcome User <a href=\'/logout'>click to logout</a>");
+        res.redirect('main.html');
     }else
     res.sendFile('views/index.html',{root:__dirname})
 });
@@ -45,7 +45,7 @@ app.post('/user',(req,res) => {
         res.redirect('main.html') ;
     }
     else{
-        res.send('joe mama');
+        res.send(`Date incorecte! <a href=\'/logout'>try again</a>`)
     }
 })
 
