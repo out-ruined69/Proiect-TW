@@ -13,3 +13,15 @@ function schimba(z){
     console.log(b);
     document.getElementsByTagName("body")[0].style.backgroundColor=b;
 }
+
+var ecran = document.getElementById("ecranFull");
+var poze = document.getElementById("ecranPoza");
+
+function deschide(poza){
+    ecran.style.display="flex";
+    poze.src = poza;
+}
+
+function inchide(){
+    ecran.style.display="none";
+}

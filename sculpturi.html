@@ -33,7 +33,27 @@
             <div class="titlu">Your favorite digital museum</div>
         </div>
 
-        <center>
+    <div class="ecran" id="ecranFull">
+        <img src="sculptura1.jpg" alt="poza" id="ecranPoza">
+        <p onclick="inchide()">✖</p>
+    </div>
+    <div class="galerie">
+        <img src="sculptura1.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura2.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura3.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura4.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura5.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura6.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura7.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura8.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura9.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura10.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura11.jpg" alt="poza" onclick="deschide(this.src)">
+        <img src="sculptura13.jpg" alt="poza" onclick="deschide(this.src)">
+
+    </div>
+
+    <center>
         <input type="text" id="culoare" placeholder="Introduceti o culoare">   
 
         <button onclick="changeColor()">Schimba Culoarea</button>  
@@ -46,7 +66,7 @@
         <button onclick="schimba(this)" class="culoare c5"></button>
         <button onclick="schimba(this)" class="culoare c6"></button>
 
-</div>
+    </div>
 </center>
 
 <script src="code_sculpturi.js"></script>

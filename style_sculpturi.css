@@ -151,3 +151,60 @@ font-family: Tangerine;
 .c6{
     background-color: #d6bcae;
 }
+
+.galerie{
+    width: 80%;
+    margin: 70px auto 50px;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:30px;
+}
+
+.galerie img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.galerie img:hover{
+    transform: scale(0.8) rotate(15deg);
+    border-radius: 20px;
+    box-shadow: 0 30px 70px #2f5056;
+}
+
+.galerie img:nth-child(2n+1):hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 30px 70px #2f5056;
+}
+
+.ecran{
+    width: 100%;
+    height: 100%;
+    background-color: #2f505663;
+    position: fixed;
+    top:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.ecran img{
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.ecran p{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color:#c2c8c6;
+    cursor: pointer;
+
+}
