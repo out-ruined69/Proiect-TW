@@ -176,3 +176,32 @@ font-family: Tangerine;
   img:hover{
     display: none;
   }
+
+  .culoare{
+    height: 20px;
+    width: 20px;
+}
+
+.c1{
+    background-color: #8b5a2f;
+}
+
+.c2{
+    background-color: #112621;
+}
+
+.c3{
+    background-color: #c2c8c6
+}
+
+.c4{
+    background-color: #eae1d8;
+}
+
+.c5{
+    background-color: #2f5056;
+}
+
+.c6{
+    background-color: #d6bcae;
+}

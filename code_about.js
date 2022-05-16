@@ -1,3 +1,4 @@
+
 var pupile = document.getElementsByClassName("pupila");
 document.onmouseover = function(){
     var x = event.clientX * 100 / window.innerWidth + "%";
@@ -10,21 +11,18 @@ document.onmouseover = function(){
     }
 }
 
-const questions = document.querySelectorAll(".question");
 
-questions.forEach(function (question) {
-  const btn = question.querySelector(".question-btn");
-  // console.log(btn);
+var acc = document.getElementsByClassName("intrebare");
+var i;
 
-  btn.addEventListener("click", function () {
-    // console.log(question);
-
-    questions.forEach(function (item) {
-      if (item !== question) {
-        item.classList.remove("show-text");
-      }
-    });
-
-    question.classList.toggle("show-text");
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
   });
-});
+}

@@ -108,114 +108,46 @@ font-family: Tangerine;
     display: block;
 }
 
-.carusel{
-    height: 400px;
-    width: 700px;
-    overflow: hidden;
+.culori{
+    width: 70%;
     align-items: center;
 }
 
-.poze{
-    height: 500px;
-    width: 500%;
-    display: flex;
-   
-}
-
-.poze input{
-    display: none;
-}
-
-.poza{
-    transition: 2s;
-    width: 20%;
-}
-
-.poza img{
-    height: 350px;
-    width: 600px;
-  }
-
-.nav-man{
-    width: 700px;
-    margin-top: 380px;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-}
-
-.man-btn{
+.culoare{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    margin: 0 1px;
     cursor: pointer;
-    transition: 1s;
-    padding: 5px;
-    border: 3px solid #2f5056;
-    cursor: pointer;
+    border: 2px solid #ddd;
+    float: center;
 }
 
-.man-btn:not(:last-child){
-    margin-right: 40px;
+.culoare{
+    height: 20px;
+    width: 20px;
 }
 
-.man-btn:hover{
-    background: #2f5056;
+.c1{
+    background-color: #8b5a2f;
 }
 
-
-#bt1:checked ~ .first{
-    margin-left: 0 ;
+.c2{
+    background-color: #112621;
 }
 
-#bt2:checked ~ .first{
-    margin-left: -20% ;
+.c3{
+    background-color: #c2c8c6
 }
 
-#bt3:checked ~ .first{
-    margin-left: -40% ;
+.c4{
+    background-color: #eae1d8;
 }
 
-#bt4:checked ~ .first{
-    margin-left: -60% ;
+.c5{
+    background-color: #2f5056;
 }
 
-#bt5:checked ~ .first{
-    margin-left: -80% ;
-}
-
-.nav-auto{
-    width: 700px;
-    justify-content: center;
-    margin-top: 460px;
-    position: absolute;
-    display: flex;
-}
-
-.nav-auto div{
-    border: 2px solid #2f5056;
-    transition: 1s;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.nav-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#bt1:checked ~ .nav-auto .auto-bt1{
-    background: #2f5056;
-}
-
-#bt2:checked ~ .nav-auto .auto-bt2{
-    background: #2f5056;
-}
-
-#bt3:checked ~ .nav-auto .auto-bt3{
-    background: #2f5056;
-}
-
-#bt4:checked ~ .nav-auto .auto-bt4{
-    background: #2f5056;
-}
-
-#bt5:checked ~ .nav-auto .auto-bt5{
-    background: #2f5056;
+.c6{
+    background-color: #d6bcae;
 }
