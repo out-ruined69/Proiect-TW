@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3"
+  },
+  "name": "proiect-tw",
+  "version": "1.0.0",
+  "main": "code_about.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/out-ruined69/Proiect-TW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/out-ruined69/Proiect-TW/issues"
+  },
+  "homepage": "https://github.com/out-ruined69/Proiect-TW#readme",
+  "description": ""
+}
