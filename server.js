@@ -7,7 +7,6 @@ const PORT = 4000;
 
 const oneDay = 1000 * 60 * 60 * 24;
 
-//session middleware
 app.use(sessions({
     secret: "astaecheiameasupersecreta420",
     saveUninitialized:true,
@@ -18,7 +17,6 @@ app.use(sessions({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//serving public file
 app.use(express.static(__dirname));
 
 app.use(cookieParser());
@@ -53,5 +51,6 @@ app.get('/logout',(req,res) => {
     req.session.destroy();
     res.redirect('/');
 });
+
 
 app.listen(PORT, () => console.log(`Server Running at port ${PORT}`));
