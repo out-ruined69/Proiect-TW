@@ -1,4 +1,8 @@
 
+function randomInterval(x, y) {
+  return Math.floor(Math.random() * (y - x + 1) + x)
+}
+
 var pupile = document.getElementsByClassName("pupila");
 document.onmouseover = function(){
     var x = event.clientX * 100 / window.innerWidth + "%";
@@ -27,6 +31,8 @@ for (i = 0; i < intr.length; i++) {
   });
 }
 
+var par=["Wow!", "Incredibil!", "Ce capodopera!", "Magnific!"] ;
+
 document.querySelector("#fisier").addEventListener("change", function(){
   const reader = new FileReader();
 
@@ -43,5 +49,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     if(recentImageDataUrl){
       document.querySelector("#imgPreview").setAttribute("src", recentImageDataUrl);
     }
-
+    var x;
+    x  = randomInterval(0,4);
+    document.body.append(par[x]);
 });
