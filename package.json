@@ -21,5 +21,8 @@
     "url": "https://github.com/out-ruined69/Proiect-TW/issues"
   },
   "homepage": "https://github.com/out-ruined69/Proiect-TW#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }

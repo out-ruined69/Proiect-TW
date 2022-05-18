@@ -52,5 +52,9 @@ app.get('/logout',(req,res) => {
     res.redirect('/');
 });
 
+app.get('*',(req,res) =>{
+    res.redirect('views/err404.html');
+})
+
 
 app.listen(PORT, () => console.log(`Server Running at port ${PORT}`));
